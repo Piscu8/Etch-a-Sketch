@@ -1,0 +1,36 @@
+html {
+    font-size: 10px;
+    background-color: rgb(159, 161, 161);
+    
+  }
+
+  body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+
+  }
+
+  .grid-container {
+    background-color: #2196F3;
+    padding: 0px;
+    width: 900px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+        
+  }
+
+  .grid-item{
+    background: rgb(224, 146, 82);
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+
+  .pintado{
+    background-color: black;
+  }
+
+  
