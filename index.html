@@ -9,47 +9,19 @@
 <body>
         
         <h1>Etch-a-Sketch</h1>
-        
-        
+        <div id='buttonContainer'>
+          <button id="btn" onclick=resetGrilla()>Reset</button>
+          <button id="btn" onclick=rainbow()>Rainbow</button>
+        </div>
+        <div class='grid-container'>
+
+        </div>
 
         
-<script>
-  creaGrilla(16);
 
-    function creaGrilla(cantidad){
-      const docu = document.querySelector('body');
-      const div = document.createElement('div');
-      div.classList.add('grid-container');
-      docu.appendChild(div);
-      for(let i=0; i<(cantidad*cantidad);i++){
-        var celda = document.createElement('div');
-
-        let ancho=0;
-        ancho = 900 / cantidad;
-        //console.log(ancho);
-
-        celda.style.cssText = 'width: ' + ancho + 'px ; height: ' + ancho + 'px';
-        //celda.style.cssText = 'width: 300px ; height: 300px';
-        celda.classList.add('grid-item');
-        //celda.innerText= i;
-        //console.log(celda.style.width);
-        div.appendChild(celda);
-      }
-    }
-     const cell = document.querySelectorAll('.grid-item');
-     //cell.addEventListener('mousemove',(e)=>{
-     //  cell.classList.add('pintado');
-     //  console.log(e);
-      cell.forEach((celd)=>{
-        celd.addEventListener('mousemove',()=>{
-          celd.classList.add('pintado');
-          //console.log(celd.innerText);
-        })
-      })
-
-      
-
-    
+        
+<script src="./main.js" type="text/javascript">
+  
 </script>
 </body>
 </html>
