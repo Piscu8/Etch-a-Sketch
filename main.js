@@ -26,7 +26,7 @@ pintaCelda();
                 celd.classList.remove('pintado');
                 celd.style.backgroundColor = 'rgb(' + Math.floor((Math.random() * 255)) + ',' + Math.floor((Math.random() * 255)) +',' + Math.floor((Math.random() * 255)) + ')';
                 
-            }
+                }
         })
       })
     }
@@ -43,14 +43,13 @@ pintaCelda();
 
     function cantidadCeldas(){
         let cantCeldas=0;
-        cantCeldas = prompt("Ingrese cantidad de celdas:")
-        if (cantCeldas <= 0 || cantCeldas > 30 || isNaN(cantCeldas)){
-            alert("Debe ingresar entre 1 y 30 celdas!");
-            cantidadCeldas();
-        }
+        cantCeldas = prompt("Ingrese cantidad de celdas:");
+        
         return parseInt(cantCeldas)
     }
 
     function rainbow(){
         multiColor = true;
+        fadeBlack=false;
+        
     }
